@@ -1,0 +1,16 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. EXERCISE.
+
+       ENVIRONMENT DIVISION.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  QUESTION-MSG    PIC X(15) VALUE "CHOOSE COLOR: ".
+       01  FAV-COLOR       PIC X(20).
+
+       PROCEDURE DIVISION.
+       MAIN-LOGIC.
+           DISPLAY QUESTION-MSG.
+           ACCEPT FAV-COLOR.
+           DISPLAY "Ah, your favorite color is: " FAV-COLOR.
+           STOP RUN.
